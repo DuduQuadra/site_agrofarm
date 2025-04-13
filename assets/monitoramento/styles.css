@@ -1,0 +1,452 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #2E7D32;
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.header:hover {
+    background-color: #2E7D32; /* Efeito de hover no cabeçalho */
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.header .logo img {
+    max-width: 150px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: color 0.3s, transform 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #34495e;
+    transform: translateY(-3px); /* Efeito de elevação suave nos links */
+}
+
+/* Seção Hero (Banner Principal) */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1601075977020-394feb748b8a') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 200px 0;
+    background-attachment: fixed;
+    position: relative;
+    box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.5); /* Efeito de sombra interna */
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* Sombra mais forte para destacar o título */
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cta-btn {
+    background-color: #2E7D32;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cta-btn:hover {
+    background-color: #1abc9c;
+    transform: translateY(-5px); /* Efeito de elevação no hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Seção de Serviços */
+.services {
+    background-color: #ecf0f1; /* Cor de fundo suave para a seção de serviços */
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.services:hover {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); /* Efeito de profundidade ao passar o mouse */
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: #34495e; /* Título mais suave */
+}
+
+.service-item {
+    display: inline-block;
+    width: 30%;
+    margin: 0 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.service-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.service-item:hover img {
+    transform: scale(1.1);
+}
+
+.service-item h3 {
+    font-size: 1.8rem;
+    margin: 20px 0;
+    color: #2c3e50; /* Cor mais suave para o título */
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: #666;
+    padding: 0 20px 20px;
+}
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Contêiner geral do formulário de contato */
+.contact-form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da tela */
+}
+
+/* Formulário de Contato */
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Largura máxima do formulário */
+}
+
+/* Título */
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* Container do Formulário */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+/* Estilos dos campos de entrada */
+input, textarea {
+    width: 80%;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    background-color: #fff;
+    transition: border 0.3s ease;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    border-color: #2E7D32; /* Cor do foco para campos */
+    outline: none;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Campo específico para hectares */
+.input-hectares {
+    width: 50%;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    background-color: #fff;
+    transition: border 0.3s ease;
+}
+
+.input-hectares:focus {
+    border-color: #2E7D32;
+    outline: none;
+}
+
+/* Estilo do botão */
+button {
+    background-color: #2E7D32;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #2E7D32;
+    transform: translateY(-5px);
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .contact-section {
+        padding: 40px 20px;
+    }
+
+    input, textarea, .input-hectares {
+        width: 90%; /* Ampliar os campos para ocupar mais espaço */
+    }
+
+    button {
+        width: 100%; /* Botão com largura total no mobile */
+    }
+}
+
+
+/* Título */
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* Container do Formulário */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+/* Estilos dos campos de entrada */
+input, textarea {
+    width: 80%;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    background-color: #fff;
+    transition: border 0.3s ease;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    border-color: #2E7D32; /* Cor do foco para campos */
+    outline: none;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Campo específico para hectares */
+.input-hectares {
+    width: 50%;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    background-color: #fff;
+    transition: border 0.3s ease;
+}
+
+.input-hectares:focus {
+    border-color: #2E7D32;
+    outline: none;
+}
+
+/* Formulário de Contato - Customizações */
+.contact-section {
+    background-color: #f9f9f9; /* Fundo leve */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #2E7D32;
+}
+
+button {
+    background-color: #2E7D32;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #2E7D32;
+    transform: translateY(-5px);
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .contact-section {
+        padding: 40px 20px;
+    }
+
+    input, textarea, .input-hectares {
+        width: 90%; /* Ampliar os campos para ocupar mais espaço */
+    }
+
+    button {
+        width: 100%; /* Botão com largura total no mobile */
+    }
+}
+
+/* Rodapé */
+.footer {
+    background-color: #34495e;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.footer p:hover {
+    color: #2E7D32; /* Cor do hover no rodapé */
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .service-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .cta-btn {
+        font-size: 1rem;
+        padding: 12px 24px;
+    }
+
+    .contact-section {
+        padding: 40px 20px;
+    }
+
+    .footer p {
+        font-size: 1rem;
+    }
+}
